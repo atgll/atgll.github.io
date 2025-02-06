@@ -1,9 +1,14 @@
+p {
+    font-family: "bricolge grotesque", sans-serif;
+}
+
+
 .header {
     background-color: #f8f8f8;
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 125px;
     border-bottom: 5px solid #000000;
 }
 
@@ -11,13 +16,17 @@
 
 .header h1 {
     font-family: "darker grotesque", sans-serif, bold;
-    font-size: 65px;
+    font-size: 60px;
     width: 100%;
+    position: relative;
+    top: -40px;
 }
 
 .header nav {
     font-family: "darker grotesque", sans-serif;
     font-size: 20px;
+    position: relative;
+    top: -60px;
 }
 
 .header nav ul {
@@ -51,3 +60,75 @@
     font-size: 25px;
     transition: 0.5s;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.section1 {
+    width: 33%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    position: relative;
+    right: 33%;
+    flex-shrink: inherit;
+}
+
+.section1 h2 {
+    font-family: "darker grotesque", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.section1 p {
+    font-family: "bricolge grotesque", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.section1:hover {
+    background-color: #ffffff;
+    width: 45%;
+    position: relative;
+    right: 0%;
+    transition: 1s;
+    flex-grow: inherit;
+}
+
+.section2 {
+    width: 33%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    position: relative;
+    left: 33%;
+    flex-shrink: inherit;
+}
+
+.section2 h2 {
+    font-family: "darker grotesque", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section2 p {
+    font-family: "bricolge grotesque", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.section2:hover {
+    background-color: #ffffff;
+    width: 45%;
+    position: relative;
+    left: 0%;
+    transition: 1s;
+    flex-grow: inherit;
+}
+
