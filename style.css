@@ -140,6 +140,12 @@ main {
 }
 
 .welcomebutton {
+   
+}
+
+#welcomebutton {
+    position: relative;
+    z-index: 100;
     font-family: "darker grotesque", sans-serif;
     font-size: 15px;
     background-color: #f8f8f8;

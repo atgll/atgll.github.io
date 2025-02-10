@@ -1,4 +1,4 @@
-let miBoton = document.querySelector(".welcomebutton");
+let miBoton = document.getElementById("welcomebutton");
 let miTitulo = document.querySelector(".welcome");
 
 function estableceNombreUsuario() {
@@ -18,5 +18,7 @@ if (!localStorage.getItem("nombre")) {
 }
 
 miBoton.onclick = function() {
+    console.log(miBoton);
+    
     estableceNombreUsuario();
 }
