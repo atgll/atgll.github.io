@@ -1,152 +1,89 @@
-p {
-    font-family: "bricolge grotesque", sans-serif;
+@import url("reset.css");
+
+
+#contenedor {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(86, 86, 88), rgb(28, 28, 36));
 }
 
 
 .header {
-    background-color: #f8f8f8;
-    padding: 20px 0;
+    margin-top: 35px;
+    padding: 0;
     text-align: center;
-    width: 100%;
-    height: 125px;
-    border-bottom: 5px solid #000000;
+    
 }
 
 
 
 .header h1 {
     font-family: "darker grotesque", sans-serif, bold;
-    font-size: 60px;
-    width: 100%;
-    position: relative;
-    top: -130px;
-}
-
-.header nav {
-    font-family: "darker grotesque", sans-serif;
-    font-size: 20px;
-    position: relative;
-    top: -130px;
-}
-
-.header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.header li {
-    display: inline;
-    margin: 0 80px;
-    background-color: #ffffff;
-    width: 300%;
-}
-
-.header li:hover {
-    background-color: #f8f8f8;
-    border-bottom: 15px transparent #000000;
-    transition: 0.5s;
-    font-size: 25px;
-    transition: 0.5s;
-}
-
-.header a {
-    text-decoration: none;
-    color: #000000;
-}
-
-
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-}
-
-.section1 {
-    width: 33%;
-    height: 450px;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    position: relative;
-    right: 33%;
-    flex-shrink: inherit;
-}
-
-.section1 h2 {
-    font-family: "darker grotesque", sans-serif;
-    font-size: 30px;
-    text-align: center;
+    font-size: 90px;
+    font-weight: 600;
     
 }
 
-.section1 p {
-    font-family: "bricolge grotesque", sans-serif;
-    font-size: 15px;
-    text-align: justify;
-}
 
-.section1:hover {
-    background-color: #ffffff;
-    width: 45%;
+#menu {
+    font-family: "Victor Mono", sans-serif;
+    margin-left: 30px;
+    float: left;
     position: relative;
-    right: 0%;
-    transition: 1s;
-    flex-grow: inherit;
+    top: 100px;
+    
 }
 
-.section2 {
-    width: 33%;
-    height: 450px;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    position: relative;
-    left: 33%;
-    flex-shrink: inherit;
-}
-
-.section2 h2 {
+#menu h2 {
     font-family: "darker grotesque", sans-serif;
     font-size: 30px;
-    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+
 }
 
-.section2 p {
-    font-family: "bricolge grotesque", sans-serif;
+#menu ul {
+    list-style-type: none;
+}
+
+#menu a {
+    border-style: none;
+    color: aliceblue;
+}
+
+
+#welcomehome {
+    font-family: "Victor Mono", sans-serif;
     font-size: 15px;
-    text-align: justify;
-}
-
-.section2:hover {
-    background-color: #ffffff;
-    width: 45%;
-    position: relative;
-    left: 0%;
-    transition: 1s;
-    flex-grow: inherit;
-}
-
-.welcomehome {
-    display: inline-block;
-    text-align: left;
-    position: relative; 
-    right: 40%;
+    float: left;
+    margin-left: 30px;
 }
 
 
 
 #welcomebutton {
-    position: relative;
-    z-index: 100;
     font-family: "darker grotesque", sans-serif;
-    font-size: 15px;
-    background-color: #f8f8f8;
-    border: 1px solid #000000;
-    border-radius: 0px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 0px 5px 0 5px;
     margin:  0px;
+}
+
+.welcome {
+    margin: 8px;
+    text-decoration:underline;
+}
+
+#footer {
+    border: 1px solid black;
+    margin: 10px;
+    position: relative;
+    top: 400px;
+}
+
+#footertext {
+    font-family: "darker grotesque";
+    font-size: 15px;
+    float: right;
 }
