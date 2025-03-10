@@ -1,152 +1,142 @@
-p {
-    font-family: "bricolge grotesque", sans-serif;
+
+
+
+#contenedor {
+    width: 85%;
+    height: 42rem;
+    border: 2px solid rgb(0, 0, 0);
 }
 
-
-.header {
-    background-color: #f8f8f8;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    height: 125px;
-    border-bottom: 5px solid #000000;
-}
-
-
-
-.header h1 {
-    font-family: "darker grotesque", sans-serif, bold;
-    font-size: 60px;
-    width: 100%;
+#cabecera {
+    box-sizing: content-box;
+    width: 90%;
+    height: 10rem;
     position: relative;
-    top: -130px;
+    /*border: 1px solid rgb(255, 0, 0);*/
 }
 
-.header nav {
-    font-family: "darker grotesque", sans-serif;
-    font-size: 20px;
-    position: relative;
-    top: -130px;
-}
-
-.header nav ul {
-    list-style-type: none;
-    margin: 0;
+#tituloprincipal h1 {
+    position: absolute;
+    right: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    margin: 0.2em;
+    /*border: 1px solid red;*/
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 5.6em;
 }
 
-.header li {
-    display: inline;
-    margin: 0 80px;
-    background-color: #ffffff;
-    width: 300%;
-}
-
-.header li:hover {
-    background-color: #f8f8f8;
-    border-bottom: 15px transparent #000000;
-    transition: 0.5s;
-    font-size: 25px;
-}
-
-.header a {
+#nav {
+    width: 18%;
+    height: 70%;
+    /*border: 1px solid blue;*/
     text-decoration: none;
-    color: #000000;
-    
+    font-family: "Fira Code", sans-serif;
+    position: absolute;
+    top: 12em;
+}
+
+#listanav p span {
+    margin-left: 20%;
+    color: black;
+    text-decoration: inherit;
+}
+
+#listanav span::before {
+    content: "";
+}
+
+#listanav span:hover {
+    cursor: pointer;
+}
+
+span:active {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.clear {
+    clear: both;
+}
+
+#screen {
+    box-sizing: border-box;
+    float: right;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 1.5rem;
+    width: 75%;
+    height: 65%;
+   /* box-shadow: inset 0px 0px 30px 30px rgb(255, 255, 255);*/
+}
+
+#screencontent {
+    top: 0.5rem;
+    left: 1.2rem;
+    position: relative;
+    margin: 1rem;
+    box-sizing: border-box;
+    width: 95%;
+    height: 95%;
+    font-family: "Fira Code", sans-serif;
+    /*color: white;*/
+    text-align: center;
+    text-align: justify;
+    padding: 0.5rem;
+    overflow: auto;
+    /*border: 1px solid black;*/
+}
+
+#aboutmetext {
+    font-family: "Fira Code", sans-serif;
+    display: none;
+}
+
+#contacttext {
+    font-family: "Fira Code", sans-serif;
+    display: none;
+}
+
+#projectslist {
+    font-family: "Fira Code", sans-serif;
+    display: none;
 }
 
 
+*::-webkit-scrollbar{
+    width: 0;
+}
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#projectslist li a {
+    color: black;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    line-height: 2rem;
+}
+
+#projectslist p {
+    font-family: "Fira Code", sans-serif;
+    font-size: 1.5rem;
+    position: sticky;
+    top: -0.8rem;
+}
+
+#contacttext a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    line-height: 2rem;
+}
+
+#shadowlist {
     width: 100%;
     height: 100%;
-}
-
-.section1 {
-    width: 33%;
-    height: 450px;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    position: relative;
-    right: 33%;
-    flex-shrink: inherit;
-}
-
-.section1 h2 {
-    font-family: "darker grotesque", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    
-}
-
-.section1 p {
-    font-family: "bricolge grotesque", sans-serif;
-    font-size: 15px;
-    text-align: justify;
-}
-
-.section1:hover {
-    background-color: #ffffff;
-    width: 45%;
-    position: relative;
-    right: 0%;
-    transition: 1s;
-    flex-grow: inherit;
-}
-
-.section2 {
-    width: 33%;
-    height: 450px;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    position: relative;
-    left: 33%;
-    flex-shrink: inherit;
-}
-
-.section2 h2 {
-    font-family: "darker grotesque", sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-
-.section2 p {
-    font-family: "bricolge grotesque", sans-serif;
-    font-size: 15px;
-    text-align: justify;
-}
-
-.section2:hover {
-    background-color: #ffffff;
-    width: 45%;
-    position: relative;
-    left: 0%;
-    transition: 1s;
-    flex-grow: inherit;
-}
-
-.welcomehome {
-    display: inline-block;
-    text-align: left;
-    position: relative; 
-    right: 40%;
-}
-
-
-
-#welcomebutton {
-    position: relative;
-    z-index: 100;
-    font-family: "darker grotesque", sans-serif;
-    font-size: 15px;
-    background-color: #f8f8f8;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 0px 5px 0 5px;
-    margin:  0px;
 }

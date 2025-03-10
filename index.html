@@ -1,51 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fira+Code:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>atgll</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="welcomehome">
-            <button id="welcomebutton" style="z-index: 9;">Hola, como te llamas?</button>
-            <p class="welcome"></p>
+    <div id="contenedor">
+        <header id="cabecera">
+            <div id="tituloprincipal"><h1>atgll</h1></div>
+            <div class="clear"></div>       
+        </header>
+        <div class="clear"></div>
+        <nav id="nav">
+            <div id="listanav">
+                <p><span class="screenbtn" data-target="aboutmetext" id="aboutme">About me</span></p>
+                <p><span class="screenbtn" data-target="projectslist" id="projects">Projects</span></p>
+                <p><span class="screenbtn" data-target="contacttext" id="contact">Contact</span></p>
+            </div>
+        </nav>
+        <div id="screen">
+            <div id="screencontent">
+                <article class="content" id="aboutmetext">
+                    <p><strong>Lorem ipsum dolor</strong></p>
+                    <p>Hic aperiam adipisci deserunt provident facere ratione eveniet, quae porro dignissimos voluptatem quibusdam quaerat ducimus in assumenda ab dolore?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate soluta sequi fuga nostrum corrupti necessitatibus voluptas ipsum doloremque omnis. Possimus laudantium veniam dignissimos! Officia cupiditate alias recusandae assumenda quas.</p>
+                </article>
+                <article class="content" id="contacttext">
+                    <ul>
+                        <li><a href="#!">Tel: 0034 622 035 924</a></li>
+                        <li><a href="mailto:angelt.guillo@gmail.com? Subject:atgll%20diseño%20web">angelt.guillo@gmail.com</a></li>
+                        <li><a href="https://github.com/">Github</a></li>
+                        <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                    </ul>
+                </article>
+                <article class="content" id="projectslist">
+                        <p><strong>Proyectos</strong></p>
+                    <div id="shadowlist">
+                        <ul>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                            <li><a href="#!">Link a proyecto de atgll</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </div>
-    <h1>atgll</h1>
-    <nav>
-        <ul>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <section class="section1">
-            <h2>About me</h2>
-            <p>WEBデザイン、WEB開発、WEBマーケティング、WEBライティング、WEB運用、WEB運営、WEBコンサルティング、WEBプロデュース</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore nam sint aut ad doloribus autem quis quod error suscipit! Ea aspernatur sed ipsa, doloremque maxime voluptates quas praesentium. Nulla.</p>
-        </section>
-        <section class="section3">
-            <h2>menu</h2>
-            <ul>
-                <li><a href="./titulo.html">web pages</a></li>
-                <li><a href="">apps</a></li>
-                <li><a href="">games</a></li>
-                <li><a href="">design</a></li>
-            </ul>
-        </section>
-        <section class="section2">
-            <h2>Contact</h2>
-            <p>WEBデザイン、WEB開発、WEBマーケティング、WEBライティング、WEB運用、WEB運営、WEBコンサルティング、WEBプロデュース</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero inventore nam sint aut ad doloribus autem quis quod error suscipit! Ea aspernatur sed ipsa, doloremque maxime voluptates quas praesentium. Nulla.</p>
-        </section>
-        
-    </main>
+    </div>
+    <script src="./show.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
